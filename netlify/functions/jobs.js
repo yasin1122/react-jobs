@@ -1,8 +1,10 @@
-// netlify/functions/jobs.js
-import jobsData from '../../src/jobs.json' assert { type: 'json' } // note the path!
+import jobsData from '../../src/jobs.json' assert { type: 'json' }
 
 export const handler = async event => {
-  const { id } = event.queryStringParameters || {}
+  // ?id=3  OR  /jobs/3
+  const idFromQuery = event.queryStringParameters?.id
+  const idFromPath = event.path.split('/').pop() // "3" in /jobs/3
+  const id = idFromQuery || (idFromPath !== 'jobs' ? idFromPath : null)
 
   if (id) {
     const job = jobsData.jobs.find(j => j.id === id)
