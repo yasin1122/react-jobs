@@ -1,41 +1,27 @@
-# React Jobs Project
+# React Jobs
 
-<img src="public/screen.png" />
+React Jobs is a React-powered job board that aggregates listings specifically for React developers, offering a clean and user-friendly interface to help you quickly find relevant opportunities.
 
-## Usage
+## Overview
 
-This project uses JSON-Server for a mock backend.
+This application is designed for React developers looking for new job opportunities. It provides an intuitive way to browse current listings, view job details, and easily navigate through job posts.
 
-### Install Dependencies
+## Features
 
-```bash
-npm install
-```
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+- **Clean Interface:** Modern and intuitive layout for a seamless user experience.
+- **Curated Listings:** Specifically tailored job postings for React developers.
+- **External Links:** Access application pages directly from the job listings.
 
-### Run JSON Server
+## Technologies Used
 
-The server will run on http://localhost:8000
+- **React:** Component-based UI library.
+- **React Router:** Client-side routing and navigation.
+- **CSS:** Custom styling with CSS variables and responsive design techniques.
 
-```bash
-npm run server
-```
+## Getting Started
 
-### Run Vite Frontend
+### Prerequisites
 
-React will run on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-### Preview Production Build
-
-```bash
-npm run preview
-```
+- [Node.js](https://nodejs.org/) (v12 or higher recommended)
+- npm or yarn package manager
