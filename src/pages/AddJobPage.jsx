@@ -85,7 +85,7 @@ const AddJobPage = ({ addJobSubmit }) => {
               <label
                 htmlFor='description'
                 className='block text-gray-700 font-bold mb-2'>
-                Job Description
+                Description
               </label>
               <textarea
                 id='description'
